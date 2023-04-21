@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Quote of the Day",
+    "name_for_model": "quotes",
+    "description_for_human": "Plugin for providing a random quote of the day from legends such as Confucius, Aristotle, Teddy Roosevelt, and more.",
+    "description_for_model": "Plugin for providing the user a thoughtful or inspirational quote.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "$PLUGIN_HOSTNAME/openapi.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "$PLUGIN_HOSTNAME/static/logo.png",
+    "contact_email": "mcgough.mason@gmail.com",
+    "legal_info_url": "https://example.com/legal"
+}

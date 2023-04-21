@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "chatgpt-plugin-quotes"
+version = "0.1.0"
+description = "A plugin that provides the user with quotes from well-known inspirational figures."
+authors = ["Mason McGough <mcgough.mason@gmail.com>"]
+readme = "README.md"
+packages = [{include = "server"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.92.0"
+uvicorn = "^0.20.0"
+openai = "^0.27.2"
+pyyaml = "^6.0"
+pydantic = "^1.10.5"
+tomli = "^2.0.1"
+
+[tool.poetry.scripts]
+start = "server.main:start"
+
+[app]
+title = "ChatGPT Quotes Library"
+port = 3000
+quotes_file = "Quotes.csv"
+plugin_hostname = "http://localhost:3000"
