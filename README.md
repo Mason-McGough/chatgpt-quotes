@@ -2,9 +2,13 @@
 
 ![Graphic art of a bust generated with Stable Diffusion](static/logo.png)
 
-A bare-bones ChatGPT plugin that retrieves thought-provoking quotes from famous figures throughout history.
+> As technology advances, it reverses the characteristics of every situation again and again. The age of automation is going to be the age of 'do it yourself.'
 
-For an in-depth walkthrough on this plugin, please read my article "ChatGPT Plugins Demystified: A Tutorial for Developers", which you can find on [my Medium page](https://medium.com/@masonmcgough).
+-- Marshall McLuhan
+
+---
+
+This is a bare-bones ChatGPT plugin that retrieves thought-provoking quotes from famous figures throughout history. For an in-depth walkthrough on this plugin, please read my article "ChatGPT Plugins Demystified: A Tutorial for Developers", which you can find on [my Medium page](https://medium.com/@masonmcgough).
 
 ## Setup
 
@@ -14,9 +18,9 @@ This project provides an API powered by FastAPI and built with Poetry. The follo
 2. Run the following commands:
 
 ```bash
-python3 -m pip install poetry
-poetry env use python3
-poetry install
+python3 -m pip install poetry  # Install Poetry
+poetry env use python3         # Specify the Python binary
+poetry install                 # Install dependencies
 ```
 
 If you prefer to use an Anaconda virtual environment:
